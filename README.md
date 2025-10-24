@@ -45,3 +45,4 @@
 7. Deployment
 
     Deployed on Netlify: https://your-netlify-link.netlify.app
+    Deployed on Netlify: https://68fbc2c23cb02155742374e7--classy-smakager-ae2c5f.netlify.app/
