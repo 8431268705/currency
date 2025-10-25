@@ -6,7 +6,7 @@
   <title>Currency Converter</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
-  <!-- Added for historical chart -->
+  <!--  historical chart -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -23,7 +23,7 @@
       <div class="currency-group">
         <div>
           <label for="fromCurrencyLabel">From</label>
-          <!-- Changed to input with datalist for auto-suggestions -->
+         
           <input id="fromCurrency" class="currency-input" list="currencyList" value="USD" aria-label="From currency" />
           <datalist id="currencyList">
             <option value="USD">USD - United States Dollar</option>
@@ -97,7 +97,7 @@
 
         <div>
           <label for="toCurrencyLabel">To</label>
-          <!-- Changed to input with datalist for auto-suggestions -->
+          
           <input id="toCurrency" class="currency-input" list="currencyList" value="EUR" aria-label="To currency" />
         </div>
       </div>
@@ -124,15 +124,15 @@
       <div id="lastUpdated" class="last-updated">Last Updated: --</div>
     </div>
 
-    <!-- New: Conversion History Section -->
+    <!--  Conversion History Section -->
     <div class="history-section">
       <button id="toggleHistory" class="btn btn-secondary" aria-expanded="false" aria-controls="historyList"> <i class="fas fa-history"></i> Toggle History </button>
       <ul id="historyList" class="history-list" hidden aria-labelledby="toggleHistory">
-        <!-- History items will be inserted here -->
+        
       </ul>
     </div>
 
-    <!-- New: Historical Chart Section -->
+    <!-- Historical Chart Section -->
     <div class="chart-section">
       <h2>Historical Rates (Last 7 Days)</h2>
       <canvas id="rateChart" width="400" height="200" aria-label="Historical exchange rate chart"></canvas>
